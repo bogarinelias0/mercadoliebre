@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Crea tu cuenta!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header"> 
+            <div class="header-logo">
+                <img src="img/logo-mercado-liebre.svg" alt="Logo">
+                <div class="input-busq">
+                    <input type="search" placeholder="Buscar productos, marcas y más">
+                    <div class="icono-busq"><i class="fa fa-search"></i></div>
+                </div> 
+                <p class="compra-cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                    
+                
+
+            </div>
+        </div>
+        
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li></ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="">Mis compras</a><i class="fas fa-shopping-bag"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-dropd">
+            <i class="fas fa-bars"></i>
+
+
+        </div>
+        
+    </header>
+    <div class="container-form">
+        <h3>¡Crea tu cuenta!</h3>
+        <form action="/" method="POST">
+            <p>
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" placeholder="Escriba su nombre y apellido" name="name" minlength="3" required>
+            </p>
+            <p>
+                <label for="user">Usuario</label>
+                <input type="text" placeholder="Nombre de usuario" name="user" minlength="4" required>
+            </p>
+            <p>
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date"  name="date" required>
+                
+            </p>
+            <p>
+                <h4>Desea comprar o vender</h4>
+                <label for="buy">
+                    <input type="radio" name="buy-sell" value="buy">Comprar
+                </label>
+                <label for="sell">
+                    <input type="radio" name="buy-sell" value="sell">Vender
+                </label>
+            </p>
+            <p>
+                <h4>Categorias de interes</h4>
+                <label for="electro">
+                    <input type="checkbox" name="electro" value="electro">Electro
+                </label>
+                <label for="moda">
+                    <input type="checkbox" name="moda" value="moda">Moda
+                </label>
+                <label for="hogar">
+                    <input type="checkbox" name="hogar" value="hogar">Hogar
+                </label>
+                <label for="jugueteria">
+                    <input type="checkbox" name="jugueteria" value="jugueteria">Jugueteria
+                </label>
+                <label for="vida_sana">
+                    <input type="checkbox" name="vida_sana" value="vida_sana">Vida sana
+                </label>
+            </p>
+            <p>
+                <label for="photo">Suba su foto de perfil</label>
+                <input type="file" name="photo" >
+            </p>
+            <p>
+                <label for="password">Ingrese su contraseña</label>
+                <input type="password" name="password" required>
+            </p>
+            <p>
+                <label for="confirm">Confirme su contraseña</label>
+                <input type="password" name="confirm" name="confirm" required>
+            </p>
+            <p class="submit">
+                <input type="submit" value="Enviar">
+                    
+                <input type="reset" value="Borrar"> 
+            </p>
+        </form>
+    </div>
+</body>
+</html>

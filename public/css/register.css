@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+.container-form{
+    background-color: white;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p,h3,h4{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black !important;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit input{
+    background-color:#1259c3;
+    
+    margin: 20px 60px 20px 60px;
+}
